@@ -1,0 +1,38 @@
+@import './tokens.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--bg-deep-carbon);
+  color: var(--speed-silver);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+code, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Central Timeline Spine Layout (Desktop Alternating) */
+.timeline-spine {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--timeline-spine-width, 3px);
+  background: var(--mercedes-cyan);
+  box-shadow: 0 0 15px var(--mercedes-cyan-glow);
+}
